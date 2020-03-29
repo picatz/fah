@@ -1,0 +1,7 @@
+<config>
+  <user value="Anonymous"/>
+  <team value="0"/>
+  <power value="full"/>
+  <fold-anon value="true"/>
+  <slot id='0' type='CPU'/>
+</config>
