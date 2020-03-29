@@ -19,3 +19,10 @@ $ docker run -it --rm fah-client
 19:24:27:Connecting to assign1.foldingathome.org:8080
 ...
 ```
+
+## Deploy to Nomad
+
+```console
+$ nomad run fah.nomad
+...
+```
