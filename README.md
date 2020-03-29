@@ -24,5 +24,10 @@ $ docker run -it --rm fah-client
 
 ```console
 $ nomad run fah.nomad
-...
+==> Monitoring evaluation "f4e02ca1"
+    Evaluation triggered by job "folding-at-home"
+    Evaluation within deployment: "15e1bc04"
+    Allocation "6518ece5" created: node "3cea90f6", group "folding-at-home"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "f4e02ca1" finished with status "complete"
 ```
