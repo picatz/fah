@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+  - cron: "0 9 * * *"
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: docker build . --file Dockerfile --tag fah-client:$(date +%s)
+      
